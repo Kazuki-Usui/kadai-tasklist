@@ -5,6 +5,7 @@
 
 <h1>id = {{ $tasklist->id }} の詳細ページ</h1>
 
+    <p>タイトル{{$tasklist->title}}</p>
     <p>ステータス{{ $tasklist->status }}</p>
     <p>メッセージ{{ $tasklist->content }}</p>
 

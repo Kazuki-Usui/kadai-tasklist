@@ -8,6 +8,10 @@
     {!! Form::model($tasklist, ['route' => 'tasklists.store']) !!}
     
     
+     {!! Form::label('title', 'タイトル:') !!}
+        {!! Form::text('title') !!}
+    
+    
      {!! Form::label('status', 'ステータス:') !!}
         {!! Form::text('status') !!}
 

@@ -6,9 +6,13 @@
 <h1>id: {{ $tasklist->id }} の編集ページ</h1>
 
     {!! Form::model($tasklist, ['route' => ['tasklists.update', $tasklist->id], 'method' => 'put']) !!}
+    
+    
+        {!! Form::label('title', 'タイトル:') !!}
+        {!! Form::text('title') !!}
 
 
-{!! Form::label('status', 'ステータス:') !!}
+        {!! Form::label('status', 'ステータス:') !!}
         {!! Form::text('status') !!}
         
         {!! Form::label('content', 'メッセージ:') !!}
