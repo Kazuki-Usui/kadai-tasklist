@@ -9,7 +9,7 @@
         <ul>
             @foreach ($tasklists as $tasklist)
                 <li>{!! link_to_route('tasklists.show', $tasklist->id, ['id' =>
-$tasklist->id]) !!} : {{ $tasklist->title }} : {{ $tasklist->status }} > {{ $tasklist->content }}</li>
+$tasklist->id]) !!} : {{ $tasklist->title }} > {{ $tasklist->status }} > {{ $tasklist->content }}</li>
             @endforeach
         </ul>
     @endif
