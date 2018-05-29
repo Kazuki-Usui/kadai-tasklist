@@ -26,7 +26,7 @@
  </tr>
  @endforeach
  </tbody>
-         </table>
+ </table>
  
     @endif
 
