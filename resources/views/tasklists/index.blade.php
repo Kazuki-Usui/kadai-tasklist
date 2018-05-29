@@ -19,21 +19,19 @@
  <tbody>
  @foreach ($tasklists as $tasklist)
  <tr>
- <td>{!! link_to_route('tasklists.show', $tasklist->id,
-['id' => $tasklist->id]) !!}</td>
+ <td>{!! link_to_route('tasklists.show', $tasklist->id, ['id' => $tasklist->id]) !!}</td>
  <td>{{ $tasklist->title }}</td>
  <td>{{ $tasklist->status }}</td>
  <td>{{ $tasklist->content }}</td>
  </tr>
  @endforeach
  </tbody>
- </table>
+         </table>
  
     @endif
 
 
-    {!! link_to_route('tasklists.create', '新規メッセージの投稿', null, ['clas
-     s' => 'btn btn-primary']) !!}
+    {!! link_to_route('tasklists.create', '新規メッセージの投稿', null, ['class' => 'btn btn-primary']) !!}
 
 
 @endsection

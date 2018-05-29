@@ -13,11 +13,10 @@
 
     {!! Form::model($tasklist, ['route' => ['tasklists.update', $tasklist->id], 'method' => 'put']) !!}
     
-      <div class="form-group">
+        <div class="form-group">
     
         {!! Form::label('title', 'タイトル:') !!}
-        {!! Form::text('title', null, ['class' => 'form-control
-']) !!}
+        {!! Form::text('title', null, ['class' => 'form-control']) !!}
         
         
         </div>
@@ -26,25 +25,23 @@
 
 
         {!! Form::label('status', 'ステータス:') !!}
-        {!! Form::text('status', null, ['class' => 'form-control
-']) !!}
+        {!! Form::text('status', null, ['class' => 'form-control']) !!}
         
         </div>
         
         <div class="form-group">
         
         {!! Form::label('content', 'メッセージ:') !!}
-        {!! Form::text('content', null, ['class' => 'form-control
-']) !!}
+        {!! Form::text('content', null, ['class' => 'form-control']) !!}
 
         {!! Form::submit('更新', ['class' => 'btn btn-default']) !!}
 
-    {!! Form::close() !!}
+        {!! Form::close() !!}
     
+        </div>
     
-    
- </div>
- </div>
+</div>
+</div>
 </div>
 </div>
 </div>

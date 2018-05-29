@@ -15,16 +15,16 @@
     <p>ステータス{{ $tasklist->status }}</p>
     <p>メッセージ{{ $tasklist->content }}</p>
 
- {!! link_to_route('tasklists.edit', 'このメッセージを編集', ['id' => $tasklist->id], ['class' => 'btn btn-default']) !!}
+      {!! link_to_route('tasklists.edit', 'このメッセージを編集', ['id' => $tasklist->id], ['class' => 'btn btn-default']) !!}
 
 
-{!! Form::model($tasklist, ['route' => ['tasklists.destroy', $tasklist->id], 'method' => 'delete']) !!}
+      {!! Form::model($tasklist, ['route' => ['tasklists.destroy', $tasklist->id], 'method' => 'delete']) !!}
 
-        {!! Form::submit('削除', ['class' => 'btn btn-danger']) !!}
+      {!! Form::submit('削除', ['class' => 'btn btn-danger']) !!}
         
-    {!! Form::close() !!}
+      {!! Form::close() !!}
     
-    </div>
+</div>
 </div>
 </div>
 </div>
